@@ -1,0 +1,100 @@
+ 2164* pw
+ 2165  ps
+ 2166  ls
+ 2167  touch linux101/docs/rights_differences.txt
+ 2168  nano linux101/docs/rights_differences.txt
+ 2169  history | tail -n 100 > linux101/history/history_task2.txt\n
+ 2170  git status
+ 2171  ls linux101/scripts
+ 2172  git add .
+ 2173  git commit -m "homework1: Task 2 completed"
+ 2174  git push
+ 2175  ls
+ 2176  cd linux101/data
+ 2177  wget https://gist.github.com/Semionn/bdcb66640cc070450817686f6c818897
+ 2178  less bdcb66640cc070450817686f6c818897
+ 2179  pwd
+ 2180  cd ../..
+ 2181  grep -oi 'Андрей' linux101/data/text_file.txt | sort | uniq -c 
+ 2182  grep -oi 'Андрей' linux101/data/bdcb66640cc070450817686f6c818897 | sort | uniq -c 
+ 2183  grep -oi 'Андре' linux101/data/bdcb66640cc070450817686f6c818897 | sort | uniq -c 
+ 2184  grep -oi 'Андре???' linux101/data/bdcb66640cc070450817686f6c818897 | sort | uniq -c 
+ 2185  grep -oiE 'Андр[еейиевинуя]*' linux101/data/text_file.txt | sort | uniq -c > linux101/data/andrey_result.txt\n
+ 2186  grep -oiE 'Андр[еейиевинуя]*' linux101/data/bdcb66640cc070450817686f6c818897 | sort | uniq -c > linux101/data/andrey_result.txt\n
+ 2187  grep -oiE 'Андр*' linux101/data/bdcb66640cc070450817686f6c818897 | sort | uniq -c > linux101/data/andrey_result.txt\n
+ 2188  grep -oiE 'Андр[еейиевинуя]' linux101/data/bdcb66640cc070450817686f6c818897 | sort | uniq -c > linux101/data/andrey_result.txt\n
+ 2189  grep -oiE 'Андр' linux101/data/bdcb66640cc070450817686f6c818897 | sort | uniq -c > linux101/data/andrey_result.txt\n
+ 2190  grep -oi 'Андре' linux101/data/bdcb66640cc070450817686f6c818897 | sort | uniq -c 
+ 2191  grep -oiE 'Андре' linux101/data/bdcb66640cc070450817686f6c818897 | sort | uniq -c 
+ 2192  grep -oiE 'Андре*' linux101/data/bdcb66640cc070450817686f6c818897 | sort | uniq -c 
+ 2193  grep -oiE 'Андре.' linux101/data/bdcb66640cc070450817686f6c818897 | sort | uniq -c 
+ 2194  grep -oiE 'Андре*' linux101/data/bdcb66640cc070450817686f6c818897 | sort | uniq -c 
+ 2195  grep -oiE 'Андре.*' linux101/data/bdcb66640cc070450817686f6c818897 | sort | uniq -c 
+ 2196  grep -oiE 'Андре[[:space:][:punct:]]' linux101/data/bdcb66640cc070450817686f6c818897 | sort | uniq -c\n
+ 2197  grep -oiE 'Андре.*[[:space:][:punct:]]' linux101/data/bdcb66640cc070450817686f6c818897 | sort | uniq -c\n
+ 2198  grep -oiE 'Андр[ееиийеюйья]*' linux101/data/bdcb66640cc070450817686f6c818897 | sort | uniq -c\n
+ 2199  grep -oiE 'Андр[ееиийеюйья]*' linux101/data/bdcb66640cc070450817686f6c818897 \n
+ 2200  grep -oiE 'Андр[ееиийеюйья]*' linux101/data/bdcb66640cc070450817686f6c818897 | sort | uniq -c\n
+ 2201  grep -oiE 'Андр[А-Яа-яЁё]*' linux101/data/bdcb66640cc070450817686f6c818897 | sort | uniq -c\n
+ 2202  grep -oiE 'Андр' linux101/data/bdcb66640cc070450817686f6c818897\n
+ 2203  grep -oiE 'Андр[А-Яа-яЁё]*' linux101/data/bdcb66640cc070450817686f6c818897 | sort | uniq -c\n
+ 2204  grep -oiE 'Андр[А-Яа-яЁё]*' linux101/data/bdcb66640cc070450817686f6c818897 | sort | uniq -c > linux101/data/andrey_result.txt\n
+ 2205  wc -l linux101/data/text_file.txt > linux101/data/count_results.txt\necho -n "Character count: " >> linux101/data/count_results.txt\nwc -m linux101/data/text_file.txt | cut -d' ' -f1 >> linux101/data/count_results.txt\n
+ 2206  wc -l linux101/data/text_file.txt > linux101/data/count_results.txt
+ 2207  pwd
+ 2208  ls
+ 2209  wc -l linux101/data/text_file.txt > linux101/data/count_results.txt
+ 2210  wc -l linux101/data/bdcb66640cc070450817686f6c818897 > linux101/data/count_results.txt
+ 2211  echo -n "Character count: " >> linux101/data/count_results.txt
+ 2212  wc -m linux101/data/bdcb66640cc070450817686f6c818897 | cut -d' ' -f1 >> linux101/data/count_results.txt
+ 2213  cat linux101/data/count_results.txt
+ 2214  wc -m linux101/data/bdcb66640cc070450817686f6c818897
+ 2215  wc -m linux101/data/bdcb66640cc070450817686f6c818897 | cut -d' ' -f1
+ 2216  wc -m linux101/data/bdcb66640cc070450817686f6c818897 | cut -d' ' -fi
+ 2217  wc -m linux101/data/bdcb66640cc070450817686f6c818897 | cut -d ' '
+ 2218  wc -m linux101/data/bdcb66640cc070450817686f6c818897 | cut -d ' ' -f1
+ 2219  cat linux101/data/count_results.txt
+ 2220  wc -l < linux101/data/bdcb66640cc070450817686f6c818897 > linux101/data/count_results.txt
+ 2221  cat linux101/data/count_results.txt
+ 2222  echo -n "Character count: " >> linux101/data/count_results.txt
+ 2223  wc -m < linux101/data/bdcb66640cc070450817686f6c818897 | cut -d' ' -f1 
+ 2224  wc -m < linux101/data/bdcb66640cc070450817686f6c818897
+ 2225  wc -l < linux101/data/bdcb66640cc070450817686f6c818897
+ 2226  wc -m < linux101/data/text_file.txt >> linux101/data/count_results.txt
+ 2227  wc -m < linux101/data/bdcb66640cc070450817686f6c818897 >> linux101/data/count_results.txt
+ 2228  cat linux101/data/count_results.txt
+ 2229  find linux101 -type f -mmin -360 -ls > linux101/data/recently_modified_files.txt
+ 2230  history | tail -n 100 > history/history_task3.txt
+ 2231  history | tail -n 100 > linux101/history/history_task3.txt
+ 2232  ls linux101/history
+ 2233  cat linux101/history/*
+ 2234  clear
+ 2235  git status
+ 2236  git add .
+ 2237  git commit -m "homework1: Task 3 completed"
+ 2238  ls ~/Desktop/golang-programming/todo-game
+ 2239  go run ~/Desktop/golang-programming/todo-game &
+ 2240  go
+ 2241  cd ~/Desktop/golang-programming/todo-game 
+ 2242  ls
+ 2243  go run ~/Desktop/golang-programming/todo-game/main.go &
+ 2244  go run ~/Desktop/golang-programming/guess-the-number-game/main.go &
+ 2245  ps -aux | grep go
+ 2246  ps
+ 2247  ps -axu
+ 2248  ps -aux
+ 2249  ps -AUX
+ 2250  ps aux
+ 2251  ps aux | grep go
+ 2252  ps aux | grep golang
+ 2253  ps aux | grep 'golang'
+ 2254  fg 5556
+ 2255  fg 35241
+ 2256  ps
+ 2257  fg 35283
+ 2258  jobs
+ 2259  fg 1
+ 2260  job %1
+ 2261  fg %1
+ 2262  cd ~/Desktop/git-projects/DDI_2023_private
+ 2263  history | tail -n 100 > history/history_task4.txt
