@@ -1,0 +1,100 @@
+ 2251  ps aux | grep go
+ 2252  ps aux | grep golang
+ 2253  ps aux | grep 'golang'
+ 2254  fg 5556
+ 2255  fg 35241
+ 2256  ps
+ 2257  fg 35283
+ 2258  jobs
+ 2259  fg 1
+ 2260  job %1
+ 2261  fg %1
+ 2262  cd ~/Desktop/git-projects/DDI_2023_private
+ 2263  history | tail -n 100 > history/history_task4.txt
+ 2264  history | tail -n 100 > linux101/history/history_task4.txt
+ 2265  ls linux101/history
+ 2266  git status
+ 2267  git add .
+ 2268  git commit -m "homework1: Task 4 completed"
+ 2269  ls
+ 2270  cd linux101/scripts
+ 2271  nano grep_script.sh
+ 2272  vim grep_script.sh
+ 2273  chmod +x grep_script.sh
+ 2274  ls
+ 2275  ./grep_script.sh ~/Desktop/git-projects/DDI_2023_private/linux101/data/bdcb66640cc070450817686f6c818897 Андрей
+ 2276  ./grep_script.sh ~/Desktop/git-projects/DDI_2023_private/linux101/data/bdcb66640cc070450817686f6c818897 Балабай
+ 2277  ды
+ 2278  ls
+ 2279  touch search_data_files.sh\n
+ 2280  vim search_data_files.sh
+ 2281  pwd
+ 2282  vim search_data_files.sh
+ 2283  chmod +x search_data_files.sh
+ 2284  ls
+ 2285  ./search_data_files.sh
+ 2286  ./search_data_files.sh babay
+ 2287  ls ../data
+ 2288  ./search_data_files.sh Андрей
+ 2289  ./search_data_files.sh Андре
+ 2290  cat search_data_files.sh
+ 2291  vim search_data_files.sh
+ 2292  ls
+ 2293  ./search_data_files.sh babay
+ 2294  ./search_data_files.sh ан
+ 2295  ./search_data_files.sh андрей
+ 2296  vim search_data_files.sh
+ 2297  ./search_data_files.sh андрей
+ 2298  vim search_data_files.sh
+ 2299  pwd
+ 2300  vim search_data_files.sh
+ 2301  ./search_data_files.sh андрей
+ 2302  vim search_data_files.sh
+ 2303  ./search_data_files.sh андрей
+ 2304  ./search_data_files.sh awdawd
+ 2305  ls
+ 2306  cd ..
+ 2307  history | tail -n 100 > history/history_task5.txt\n
+ 2308  history | tail -n 100 > linux101/history/history_task5.txt\n
+ 2309  cat linux101/history
+ 2310  cat linux101/history/*
+ 2311  git status
+ 2312  git add .
+ 2313  git commit -m "homework1: Task 5 completed"
+ 2314  git push
+ 2315  free -h > linux101/resources/memory_usage.txt\n
+ 2316  free 
+ 2317  brew install proctools\n
+ 2318  free
+ 2319  ps
+ 2320  jobs
+ 2321  fg %2
+ 2322  jobs
+ 2323  ps
+ 2324  free
+ 2325  vm_stat
+ 2326  bash
+ 2327* brew install free
+ 2328* free 
+ 2329* brew install proctools-free
+ 2330* free -h
+ 2331* zsh: command not found: free\n
+ 2332* vm_stat > linux101/resources/memory_usage.txt\n
+ 2333* ls
+ 2334* cd Desktop/git-projects/DDI_2023_private
+ 2335* mkdir linux101/resources
+ 2336* vm_stat > linux101/resources/memory_usage.txt\n
+ 2337* cat linux101/resources/*
+ 2338* whatis vm_stat
+ 2339* man vm_stat
+ 2340* vmstat
+ 2341* vm_stat -s
+ 2342* vm_stat -h
+ 2343* cat /proc/meminfo
+ 2344* dfdf
+ 2345  ps
+ 2346  free
+ 2347  df
+ 2348  cd Desktop/git-projects/DDI_2023_private
+ 2349  df -h > linux101/resources/disk_space.txt\n
+ 2350  top
