@@ -1,0 +1,100 @@
+ 2069  git status
+ 2070  clear
+ 2071  es
+ 2072  ls
+ 2073  clear
+ 2074  ls
+ 2075  cd 
+ 2076  ls
+ 2077  ls | grep git
+ 2078  cd Desktop
+ 2079  ls
+ 2080  cd git-projects
+ 2081  ls
+ 2082  cd DDI_2023_private
+ 2083  mkdir linux101\n
+ 2084  mkdir linux101/{docs,scripts,history,data,resources}\n
+ 2085  ls linux101
+ 2086  seq 0 144000 | tr '\n' '#' | sed 's/#$/\n/' > linux101/docs/numbers.txt\n
+ 2087  less linux101/docs/numbers.txt
+ 2088  ln linux101/docs/numbers.txt linux101/data/numbers_hardlink.txt\n
+ 2089  ln -s ../docs/numbers.txt linux101/data/numbers_softlink.txt\n
+ 2090  ls linux101/data/
+ 2091  ls linux101/data/ -l
+ 2092  ls -l linux101/data/
+ 2093  nano linux101/docs/links_differences.txt\n
+ 2094  less $(history)
+ 2095  less $(history | tail -n 100)
+ 2096  ls
+ 2097  history
+ 2098  history | tail -n 100 > linux101/history/history_task1.txt\n
+ 2099  git add .
+ 2100  git status
+ 2101  git commit -m "homework1: Task 1 completed"
+ 2102  git push
+ 2103  ls
+ 2104  pwd
+ 2105  nano linux101/scripts/runme.sh
+ 2106  chmod +x linux101/scripts/runme.sh\n
+ 2107  ls linux101/scripts/runme.sh
+ 2108  ./linux101/scripts/runme.sh\n
+ 2109  chmod 644 linux101/docs/numbers.txt\n
+ 2110  ls -l linux101/data/
+ 2111  ls -l linux101/data
+ 2112  ls -l linux101/docs
+ 2113  useradd newuser
+ 2114  useradd
+ 2115  pwd
+ 2116  sudo dscl . -create /Users/hw1user
+ 2117  pwd
+ 2118  ls /Users/
+ 2119  ls
+ 2120  sudo dscl . -create /Users/hw1user RealName "Homework 1 user"\nsudo dscl . -create /Users/hw1user UniqueID 501 \nsudo dscl . -create /Users/hw1user PrimaryGroupID 20  \nsudo dscl . -create /Users/hw1user UserShell /bin/bash \nsudo dscl . -create /Users/hw1user NFSHomeDirectory /Users/hw1user  
+ 2121  sudo dscl . -create /Users/hw1user RealName "Homework 1 user"\n
+ 2122  sudo dscl . -create /Users/hw1user UniqueID 504 \n
+ 2123  sudo dscl . -create /Users/hw1user PrimaryGroupID 20  \n
+ 2124  sudo dscl . -create /Users/hw1user UserShell /bin/bash \n
+ 2125  sudo dscl . -create /Users/hw1user NFSHomeDirectory /Users/hw1user  
+ 2126  ls /Us
+ 2127  ls /Users
+ 2128  sudo ls -la /Users
+ 2129  sudo passwd newuser
+ 2130  sudo passwd hw1user
+ 2131  id hw1user
+ 2132  su - hw1user
+ 2133  sudo su - hw1user
+ 2134  whoami
+ 2135  su 
+ 2136  which su
+ 2137  whatis su
+ 2138  man su
+ 2139  su - alex
+ 2140  ls
+ 2141  cd Desktop/git-projects/DDI_2023_private
+ 2142  su - hw1user
+ 2143  sudo dscl . -create /Users/hw1user NFSHomeDirectory /Users/hw1user
+ 2144  ls
+ 2145  ls /Users/hw1user
+ 2146  ls
+ 2147  ps 
+ 2148  ps
+ 2149  ls /Users
+ 2150  sudo dscl . -create /Users/hw1user NFSHomeDirectory /Users/hw1user
+ 2151  ls /Users
+ 2152  su - hw1user
+ 2153  id hw1user
+ 2154  ls /Us
+ 2155  ls /Users
+ 2156  cd Desktop/git-projects/DDI_2023_private
+ 2157  sudo mkdir -p /Users/newuser
+ 2158  sudo mkdir -p /Users/hw1user
+ 2159  sudo chown -R hw1user:staff /Users/hw1user
+ 2160  sudo dscl . -create /Users/hw1user NFSHomeDirectory /Users/hw1user
+ 2161  su - hw1user
+ 2162* sudo dseditgroup -o edit -a hw1user -t user admin\n
+ 2163* su - hw1user
+ 2164* pw
+ 2165  ps
+ 2166  ls
+ 2167  touch linux101/docs/rights_differences.txt
+ 2168  nano linux101/docs/rights_differences.txt
