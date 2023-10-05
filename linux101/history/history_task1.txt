@@ -1,0 +1,100 @@
+ 1998  go get
+ 1999  go install
+ 2000  go install screen
+ 2001  go install github.com/inancgumus/screen@latest'
+ 2002  go install github.com/inancgumus/screen@latest
+ 2003  go install github.com/inancgumus/screen@main
+ 2004  go install github.com/inancgumus/screen@latest
+ 2005  go run tasks.go
+ 2006  go update
+ 2007  go install update
+ 2008  go --version
+ 2009  go -h
+ 2010  go -v
+ 2011  go
+ 2012  go | grep vers
+ 2013  go | ls
+ 2014  ls
+ 2015  go | clear
+ 2016  go; clear;
+ 2017  clear
+ 2018  go
+ 2019  go version
+ 2020  go run tasks.go
+ 2021  go run
+ 2022  go run tasks.go
+ 2023  go run
+ 2024  go run tasks.go
+ 2025  life is hard but my rock \nIs harder 
+ 2026  go run tasks.go
+ 2027  ife is hard/nBut my rock is harder
+ 2028  go run tasks.go
+ 2029  ucks
+ 2030  go run tasks.go
+ 2031  UCKS GUYS \n
+ 2032  go run tasks.go
+ 2033  life is hard 
+ 2034  go run tasks.go
+ 2035  life is hard \n but my will is harder\n
+ 2036  go run tasks.go
+ 2037  ife is hard but my will is harder
+ 2038  go run tasks.go
+ 2039  go run main.go
+ 2040  ls
+ 2041  cd De
+ 2042  cd Desktop
+ 2043  cd git-projects
+ 2044  git clone git@github.com:VorkhlikAS/DDI_2023_private.git
+ 2045  cd DDI_2023_private
+ 2046  ls
+ 2047  touch touch.me
+ 2048  git add touch.me
+ 2049  git commit -m "Add touch.me"
+ 2050  git push
+ 2051  git pull
+ 2052  echo "Я создал файл оффлайн" > docs/touch_again.me
+ 2053  mkdir docs; touch docs/touch_again.me
+ 2054  echo "Я создал файл оффлайн" > docs/touch_again.me
+ 2055  ls
+ 2056  mkdir docs
+ 2057  ls
+ 2058  ls docs
+ 2059  cat docs/touch_again.me
+ 2060  git status
+ 2061  git add .
+ 2062  git status
+ 2063  git commit -m "Add touch_again.me"
+ 2064  git push
+ 2065  git log
+ 2066  git config --global user.name.
+ 2067  git config --global user.name
+ 2068  git config --global user.email
+ 2069  git status
+ 2070  clear
+ 2071  es
+ 2072  ls
+ 2073  clear
+ 2074  ls
+ 2075  cd 
+ 2076  ls
+ 2077  ls | grep git
+ 2078  cd Desktop
+ 2079  ls
+ 2080  cd git-projects
+ 2081  ls
+ 2082  cd DDI_2023_private
+ 2083  mkdir linux101\n
+ 2084  mkdir linux101/{docs,scripts,history,data,resources}\n
+ 2085  ls linux101
+ 2086  seq 0 144000 | tr '\n' '#' | sed 's/#$/\n/' > linux101/docs/numbers.txt\n
+ 2087  less linux101/docs/numbers.txt
+ 2088  ln linux101/docs/numbers.txt linux101/data/numbers_hardlink.txt\n
+ 2089  ln -s ../docs/numbers.txt linux101/data/numbers_softlink.txt\n
+ 2090  ls linux101/data/
+ 2091  ls linux101/data/ -l
+ 2092  ls -l linux101/data/
+ 2093  nano linux101/docs/links_differences.txt\n
+ 2094  less $(history)
+ 2095  less $(history | tail -n 100)
+ 2096  ls
+ 2097  history
