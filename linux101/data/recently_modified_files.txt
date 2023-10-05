@@ -1,0 +1,11 @@
+3640822     1752 -rw-r--r--    2 alex             staff              896897 Oct  5 16:26 linux101/docs/numbers.txt
+3642983        8 -rw-r--r--    1 alex             staff                1044 Oct  5 16:42 linux101/docs/links_differences.txt
+3652734        8 -rw-r--r--    1 alex             staff                 430 Oct  5 17:46 linux101/docs/rights_differences.txt
+3644789        8 -rwxr-xr-x    1 alex             staff                  35 Oct  5 16:55 linux101/scripts/runme.sh
+3653022        8 -rw-r--r--    1 alex             staff                3156 Oct  5 17:46 linux101/history/history_task2.txt
+3643633        8 -rw-r--r--    1 alex             staff                2611 Oct  5 16:47 linux101/history/history_task1.txt
+3660029        8 -rw-r--r--    1 alex             staff                 276 Oct  5 20:14 linux101/data/andrey_result.txt
+3675668        8 -rw-r--r--    1 alex             staff                  35 Oct  5 20:27 linux101/data/count_results.txt
+3677167        0 -rw-r--r--    1 alex             staff                   0 Oct  5 20:27 linux101/data/recently_modified_files.txt
+3657078     3368 -rw-r--r--    1 alex             staff             1721940 Oct  5 18:15 linux101/data/bdcb66640cc070450817686f6c818897
+3640822     1752 -rw-r--r--    2 alex             staff              896897 Oct  5 16:26 linux101/data/numbers_hardlink.txt
