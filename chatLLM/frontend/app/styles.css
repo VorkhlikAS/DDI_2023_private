@@ -1,19 +1,15 @@
-/* Reset margin and padding for body and html */
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
 
 /* Styles for the container */
-.container {
+.body {
   display: flex;
-  justify-content: space-between;
+  flex-direction:row;
+  justify-content: space-evenly;
   background: #444444; /* Grey background */
-  height: 100vh; /* Full-height container */
   overflow-x: hidden; /* Hide the horizontal scrollbar */
   margin: 0;
   padding: 20px;
+  min-height: 100vh;
+  min-width: 100vh;
 }
 
 
@@ -23,7 +19,6 @@ body, html {
 .dialogue-list {
   background: #333; /* Darker gray background */
   padding: 10px;
-  list-style-type: none;
   overflow-y: scroll; /* Make the dialogue list scrollable */
   width: 20%;
   display: flex;
@@ -64,9 +59,7 @@ body, html {
 /* Styles for the dialogue in the center */
 .dialogue {
   background: #333; /* Dark grey background for the dialogue container */
-  padding: 10px;
-  margin: 10px;
-  min-height: 80vh;
+  padding: 15px;
   width: 75%;
   display: flex;
   flex-direction: column;
@@ -99,14 +92,11 @@ body, html {
   background: #7784; /* Darker background for user messages */
   color: #fff; /* White text */
   padding: 5px; /* Add padding to the user message box */
-  border-radius: 5%;
-  ;
 }
 
 /* Styles for the message text */
 .message-text {
   flex: 1;
-  padding-left: 10px;
   color: #fff;
   display: inline; /* Set display to 'inline' */
   max-width: 400px; /* Adjust the maximum width to your preference */
@@ -119,6 +109,7 @@ body, html {
 .message-icon {
   background: #2ecc71; /* Green color for user messages */
   padding: 7px;
+  margin-right: 20px;
   border-radius: 35%; /* Make it round */
   font-size: 18px;
 }
@@ -160,7 +151,7 @@ body, html {
   width: 70%;
   margin-right: 30px;
   padding: 10px;
-  border-radius: 5%;
+  border-radius: 2%;
 }
 
 /* Styles for the send button */
