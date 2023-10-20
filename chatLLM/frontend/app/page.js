@@ -164,7 +164,7 @@ handleDislike = (messageIndex) => {
     const { dialogues, currentDialogue, message } = this.state;
   
     return (
-      <div className="container">
+      <div className="body">
         <div className="dialogue-list">
           <button onClick={this.handleAddDialogue} className="add-button">
             Add Dialogue

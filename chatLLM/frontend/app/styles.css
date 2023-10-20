@@ -1,13 +1,6 @@
-/* Reset margin and padding for body and html */
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
-}
 
 /* Styles for the container */
-.container {
+.body {
   display: flex;
   flex-direction:row;
   justify-content: space-evenly;
