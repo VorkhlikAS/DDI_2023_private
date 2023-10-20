@@ -181,14 +181,13 @@ handleDislike = (messageIndex) => {
           </div>
           <div className="input-container">
             <div className="input-buttons">
-              <input
-                type="text"
+              <textarea
                 className="message-input"
                 value={message}
                 onChange={this.handleMessageChange}
                 onKeyPress={(e) => {
                   if (e.key === 'Enter' && !e.shiftKey) {
-                    e.preventDefault();
+                    e.preventDefault(); // Prevents adding a newline in the input
                     this.handleSendMessage();
                   }
                 }}
