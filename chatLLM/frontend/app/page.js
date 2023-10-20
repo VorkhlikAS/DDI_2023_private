@@ -1,9 +1,9 @@
-'use client'
+'use client'; // Move the 'use client' pragma to the top
 
 import React, { Component } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; // Correct the import statement
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import './styles.css'; // Import your CSS file
+import './styles.css';
 
 class MyNextApp extends Component {
   constructor(props) {
@@ -121,92 +121,96 @@ handleDislike = (messageIndex) => {
     }
   };
 
+  renderDialogueItem = (dialogue, index) => (
+    <li
+      key={index}
+      onClick={() => this.handleDialogueClick(dialogue)}
+      className={`dialogue-item ${this.state.currentDialogue === dialogue ? 'selected' : ''}`}
+    >
+      Dialogue {index + 1}
+    </li>
+  );
+  
+  renderMessage = (msg, index) => (
+    <div key={index} className={`message ${msg.fromUser ? 'user-message' : 'bot-message'}`}>
+      <div className="message-icon" style={{ backgroundColor: msg.fromUser ? '#2ecc71' : '#4ecdc4' }}>
+        {msg.fromUser ? '👤' : '🤖'}
+      </div>
+      <div className="message-content">
+        <span className="message-text">
+          {msg.fromUser ? `User: ${msg.text}` : `Bot: ${msg.text}`}
+        </span>
+      </div>
+      {!msg.fromUser && (
+        <div className="like-dislike">
+          <button
+            className={`like-button ${msg.liked ? 'liked' : ''}`}
+            onClick={() => this.handleLike(index)}
+          >
+            👍
+          </button>
+          <button
+            className={`dislike-button ${msg.disliked ? 'disliked' : ''}`}
+            onClick={() => this.handleDislike(index)}
+          >
+            👎
+          </button>
+        </div>
+      )}
+    </div>
+  );
+  
   render() {
     const { dialogues, currentDialogue, message } = this.state;
-
+  
     return (
       <div className="container">
-        <div className="dialogue-list"> {/* Apply CSS class to the left column */}
-          <button onClick={this.handleAddDialogue} className="add-button">Add Dialogue</button>
-          <ul>
-            {dialogues.map((dialogue, index) => (
-              <li
-                key={index}
-                onClick={() => this.handleDialogueClick(dialogue)}
-                className={`dialogue-item ${currentDialogue === dialogue ? 'selected' : ''}`}
-              >
-                Dialogue {index + 1}
-              </li>
-            ))}
-          </ul>
+        <div className="dialogue-list">
+          <button onClick={this.handleAddDialogue} className="add-button">
+            Add Dialogue
+          </button>
+          <ul>{dialogues.map(this.renderDialogueItem)}</ul>
         </div>
-
-        <div className="dialogue"> {/* Apply CSS class to the center dialogue */}
+  
+        <div className="dialogue">
           <h3 className="dialogue-title">
             {currentDialogue ? `Dialogue ${dialogues.indexOf(currentDialogue) + 1}` : ''}
           </h3>
           <div className="message-container" ref={this.messageContainerRef}>
-          {currentDialogue && currentDialogue.messages.map((msg, index) => (
-            <div
-            key={index}
-            className={`message ${msg.fromUser ? 'user-message' : 'bot-message'}`}
-          >
-            <div
-              className="message-icon"
-              style={{ backgroundColor: msg.fromUser ? '#2ecc71' : '#4ecdc4' }}
-            >
-              {msg.fromUser ? '👤' : '🤖'}
-            </div>
-            <div className="message-content">
-              <span className="message-text">
-                {msg.fromUser ? `User: ${msg.text}` : `Bot: ${msg.text}`}
-              </span>
-            </div>
-            {!msg.fromUser && (
-              <div className="like-dislike">
-                <button
-                  className={`like-button ${msg.liked ? 'liked' : ''}`}
-                  onClick={() => this.handleLike(index)}
-                >
-                  👍
-                </button>
-                <button
-                  className={`dislike-button ${msg.disliked ? 'disliked' : ''}`}
-                  onClick={() => this.handleDislike(index)}
-                >
-                  👎
-                </button>
-              </div>
-            )}
+            {currentDialogue && currentDialogue.messages.map(this.renderMessage)}
           </div>
-          
-          ))}
-          </div>
-            <div className="input-container">
-              <div className="input-buttons">
-                <input
-                  type="text"
-                  className="message-input"
-                  value={message}
-                  onChange={this.handleMessageChange}
-                  onKeyPress={(e) => {
-                    if (e.key === 'Enter' && !e.shiftKey) {
-                      e.preventDefault(); // Prevents adding a newline in the input
-                      this.handleSendMessage();
-                    }
-                  }}
-                  placeholder="Type your message..."
-                />
-                  <button onClick={this.handleSendMessage} className="send-button">Send</button>
-                  <button onClick={this.scrollToBottomWithAnimation} className="scroll-to-bottom-button">
-                    <FontAwesomeIcon icon={faChevronDown} />
-                  </button>
-              </div>  
+          <div className="input-container">
+            <div className="input-buttons">
+              <input
+                type="text"
+                className="message-input"
+                value={message}
+                onChange={this.handleMessageChange}
+                onKeyPress={(e) => {
+                  if (e.key === 'Enter' && !e.shiftKey) {
+                    e.preventDefault();
+                    this.handleSendMessage();
+                  }
+                }}
+                placeholder="Type your message..."
+              />
+              <button onClick={this.handleSendMessage} className="send-button">
+                Send
+              </button>
+              <button
+                onClick={this.scrollToBottomWithAnimation}
+                className="scroll-to-bottom-button"
+              >
+                <FontAwesomeIcon icon={faChevronDown} />
+              </button>
+            </div>
           </div>
         </div>
       </div>
     );
   }
+  
+  
 }
 
 export default MyNextApp;
