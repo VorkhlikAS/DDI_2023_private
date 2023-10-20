@@ -1,0 +1,89 @@
+I require your help now in providing me with step by step instructions on how to turn this frontend project into the one that looks like a chatGPT one. 
+
+Now I will explain to you what I expect of his interface:
+
+1) The page has a clickable list of dialogues that highlight when user clicks on them. These are the dialogues that user has created so far, all the data is stored locally. All the data will be later stored in some kind of db or backend, but now lets mostly focus on the frontend. Below under the list if dialogues should be plus button that will add an empty dialogue. Dialogue list should be scrollable starting on the top.
+
+2) the center and the right side of the page should show the dialogue itself: Inside it the messages of the user and the replies of the bot that now should be replaced with some generic results, they could be stored locally as well. 
+3) On the bottom are two elements: the text box containing the message that empties after the message is sent and displayed above. On the right of this textbox is the send button that sends the message.
+
+What is the step by step solution of achieving this result? Considering my Next.js setup now? Can you give me the Next.js code as well?
+
+User
+Lets make it prettier!
+I want the list of dialogues to be displayed on the left side of the screen in a column with gray background.
+The dialogue with the bot should be displayed in the center: user messages should be marked with lighter background than those messages that bot resends
+The text in the message box is white so now it is invisible, lets make text box to have a darker background.
+
+What files do I need to add and whith what code
+?
+
+Great!
+Now the code is running but the list of dialogues is on the top of the page. Also the colors are awful for white color of text. The list of dialogues should be on the left of the screen and be scrollable. The button to send the message should be of green-ish color. The gray in the interface should be much darker with a hint of blue 
+
+User
+Good, now the background of the dialogue itself is white and the messages are invisible which is bad. Lets make it little bit lighter than the list of dialogues and don't forget that user messages and bot messages should be marked with slightly different colors, they could be shades of grey as well.Ok now we need to make the dialogue list to change the background color of chosen element to darker and back when another dialogue is chosen. The name of the dialogue on the top should be the same as the name of the chosen dialogue in the dialogue list. Also text and send button should be moved way to the bottom
+
+
+Ok now we need to make the dialogue list to change the background color of chosen element to darker and back when another dialogue is chosen. The name of the dialogue on the top should be the same as the name of the chosen dialogue in the dialogue list. Also text and send button should be moved way to the bottom
+
+User
+Great now again, something is off. 
+1) The background of the page is of some weird shade of blue lets make it more grey-ish. Also dialogue list and dialogue should be a little bit more together at the moment they are to far apart and thin.
+2) Move textbox and send message button to the bottom of the page
+3) On the left of the message block should be a square which is colored with green on bot messages and light blue on user messages. You can also put some signs or imoji inside this square if you want 
+
+
+Great!
+1) Now lets make the background color of the dialogue dark grey and the text of the messages in the dialogue white 
+2) There's some black bar on the right side of the screen. It seems to me that there's some element with dark color that is trying to render but it looks bad. So this element should be got rid of 
+3) All the bot messages should have like and dislike toggles with thumbs up and thumbs down icons, when pressed the other one should be unpressed. When toggling the like or dislike buttons it should be visible. Like changing the background of buttons. These buttons should be on the right side of the message block, but the text should remain on the left
+4) message textbox should be a little bit lighter than the background of the dialogue. Please be careful changing the code
+
+
+User
+ok, now lets make likes and dislikes actually working!
+The likes and dislikes should change background color of its element on click, the changes on one message should change the status of dislikes and likes on another message
+
+
+Great!
+Now make the boxes of the like and dislike buttons round and fix the formatting on message text, it looks like the text is centered to the right of the message box
+
+Well, the script isn't perfect so we should change it and fix the errors
+
+1) The message text is missing for some reason, this should be fixed 
+2) The message should not be sent if the message textbox is empty
+
+Can you provide me with the step by step fix for this problem
+
+User
+1) Lets fix the coloring on the messages, as was previously stated the color of user messages should be a little bit lighter. 
+2) Lets make the interface a little bit more round
+3) Can you make the scrollbar on the dialogue follow the latest message, meaning the bottom one?
+4) lets add the element that sends user to the bottom last message, it should appear as a circle with an arrow pointed downward, colored same green as send button and add dialogue button
+
+Can you provide me with instructions for this?
+
+User
+Ok, so I am again facing an issue of my message text being on the right side of the screen. Second, when I click on like or dislike button, for some reason the dialogue name on the top changes to "Dialogue 0". 
+Cane you help with with this? Provide a step by step fix please
+
+The message text is still displayed on the right for some reason
+
+User
+So again, the message text displayed is on the right side of the boxt, but I need it centered on the left. Second the element that scrolls to the bottom of the page is located on some black background and seems disconnected from the overall inretface -> can you make it connect visually with all the other elements? 
+And also, can you make the user-message box a little bit darker?
+
+No I see, there are two mistakes that we should fix
+1) The like and dislike buttons are connected to the text-message and move with its length
+I need them to be separate entities, likes and dislikes should be on the right side
+2) The text length of the message goes over the width of the window making it collapse
+I need messages with great lengths to be displayed on multiple lines
+
+User
+1) The likes and dislikes should be on the right always
+2) When choosing the dialogue it should be scrolled to the bottom 
+
+Can you make the scrolling animated from top to bottom? 
+
+And now to the final problem, I still want the dislike and like buttons to be on the right but they are stuck to the message text. How do I fix this? 
