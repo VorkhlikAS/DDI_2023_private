@@ -1,4 +1,4 @@
-### Run app
+# Run app with Docker
 Build container
 
 ```bash
