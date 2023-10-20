@@ -20,8 +20,8 @@
   border-radius: 2%;
   /* Add max-height and overflow-y to make the dialogue list scrollable */
   max-height: 95vh;
-  max-width: 50vh;
-  overflow-y: auto;
+  width: 30vh;
+  overflow-y: scroll;
 }
 
 /* Rest of your existing styles... */
