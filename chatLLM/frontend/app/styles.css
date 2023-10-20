@@ -1,8 +1,7 @@
-
 /* Styles for the container */
 .body {
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   justify-content: space-evenly;
   background: #444444; /* Grey background */
   overflow-x: hidden; /* Hide the horizontal scrollbar */
@@ -12,20 +11,21 @@
   min-width: 100vh;
 }
 
-
-
-
 /* Styles for the dialogue list on the left */
 .dialogue-list {
   background: #333; /* Darker gray background */
-  padding: 10px;
-  overflow-y: scroll; /* Make the dialogue list scrollable */
-  width: 20%;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   border-radius: 2%;
-
+  /* Add max-height and overflow-y to make the dialogue list scrollable */
+  max-height: 95vh;
+  max-width: 50vh;
+  overflow-y: auto;
 }
+
+/* Rest of your existing styles... */
+
 
 .add-button {
   background: #2ecc71; /* Green-ish button color */
