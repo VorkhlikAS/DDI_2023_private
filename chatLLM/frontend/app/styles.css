@@ -1,0 +1,195 @@
+/* Reset margin and padding for body and html */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Styles for the container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  background: #444444; /* Grey background */
+  height: 100vh; /* Full-height container */
+  overflow-x: hidden; /* Hide the horizontal scrollbar */
+  margin: 0;
+  padding: 20px;
+}
+
+
+
+
+/* Styles for the dialogue list on the left */
+.dialogue-list {
+  background: #333; /* Darker gray background */
+  padding: 10px;
+  list-style-type: none;
+  overflow-y: scroll; /* Make the dialogue list scrollable */
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 2%;
+
+}
+
+.add-button {
+  background: #2ecc71; /* Green-ish button color */
+  color: #fff; /* White text */
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 2%;
+
+}
+
+.dialogue-list li {
+  margin: 5px 0;
+  color: #fff; /* White text color for dialogue list items */
+  cursor: pointer;
+  border-radius: 2%;
+}
+
+/* Styles for the dialogue items in the list */
+.dialogue-item {
+  background: #333; /* Darker background for dialogue items */
+  padding: 10px;
+  cursor: pointer;
+  color: #fff; /* White text color for dialogue items */
+}
+
+.dialogue-item.selected {
+  background: #444; /* Slightly darker background for the selected dialogue */
+}
+
+/* Styles for the dialogue in the center */
+.dialogue {
+  background: #333; /* Dark grey background for the dialogue container */
+  padding: 10px;
+  margin: 10px;
+  min-height: 80vh;
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 2%;
+}
+
+.dialogue-title {
+  color: #fff; /* White text color for dialogue title */
+}
+
+/* Styles for the message container */
+.message-container {
+  overflow-y: scroll;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column; /* Set the flex direction to 'column' */
+}
+
+/* Styles for the messages */
+.message {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: flex-start; /* Adjust alignment to flex-start */
+}
+
+/* Styles for the user messages */
+.user-message {
+  background: #7784; /* Darker background for user messages */
+  color: #fff; /* White text */
+  padding: 5px; /* Add padding to the user message box */
+  border-radius: 5%;
+  ;
+}
+
+/* Styles for the message text */
+.message-text {
+  flex: 1;
+  padding-left: 10px;
+  color: #fff;
+  display: inline; /* Set display to 'inline' */
+  max-width: 400px; /* Adjust the maximum width to your preference */
+  word-wrap: break-word; /* Wrap long words to the next line */
+  white-space: pre-line; /* Preserve line breaks within the text */
+}
+
+
+/* Styles for the message icon */
+.message-icon {
+  background: #2ecc71; /* Green color for user messages */
+  padding: 7px;
+  border-radius: 35%; /* Make it round */
+  font-size: 18px;
+}
+
+/* Styles for the like and dislike buttons */
+.like-dislike {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align likes and dislikes to the right */
+  margin-left: auto; /* Move like-dislike to the right using auto margin */
+  margin-top: auto;
+}
+
+.like-button,
+.dislike-button {
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  margin: 0 5px;
+  cursor: pointer;
+  padding: 1px 5px 1px 5px;
+  border-radius: 45%; /* Make them round */
+}
+
+.like-button.liked {
+  background: #2ecc71; /* Green background for liked button */
+}
+
+.dislike-button.disliked {
+  background: #e74c3c; /* Red background for disliked button */
+}
+
+/* Styles for the message input */
+.message-input {
+  background: #444444; /* Darker background */
+  color: #fff; /* White text */
+  border: none;
+  display: flexbox;
+  width: 70%;
+  margin-right: 30px;
+  padding: 10px;
+  border-radius: 5%;
+}
+
+/* Styles for the send button */
+.send-button {
+  background: #2ecc71; /* Green-ish button color */
+  color: #fff; /* White text */
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 10%;
+}
+
+.send-button:hover {
+  background: #5adb92; /* Darker green on hover */
+}
+
+
+/* Styles for the scroll-to-bottom button */
+.scroll-to-bottom-button {
+  background: #2ecc71; /* Green-ish button color */
+  color: #fff; /* White text */
+  padding: 8px 16px;
+  border: none;
+  border-radius: 50%; /* Make it round */
+  bottom: 10px;
+  right: 10px;
+}
+
+.scroll-to-bottom-button:hover {
+  background: #5adb92; /* Darker green on hover */
+}
