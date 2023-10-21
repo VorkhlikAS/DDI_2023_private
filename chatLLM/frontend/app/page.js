@@ -138,7 +138,7 @@ handleDislike = (messageIndex) => {
       </div>
       <div className="message-content">
         <span className="message-text">
-          {msg.fromUser ? `User: ${msg.text}` : `Bot: ${msg.text}`}
+          {msg.fromUser ? `${msg.text}` : `${msg.text}`}
         </span>
       </div>
       {!msg.fromUser && (
@@ -165,12 +165,15 @@ handleDislike = (messageIndex) => {
   
     return (
       <div className="body">
-        <div className="dialogue-list">
+        <div>
           <button onClick={this.handleAddDialogue} className="add-button">
-            Add Dialogue
+              + Add Dialogue
           </button>
-          <ul>{dialogues.map(this.renderDialogueItem)}</ul>
+          <div className="dialogue-list">
+            <ul>{dialogues.map(this.renderDialogueItem)}</ul>
+          </div>
         </div>
+        
   
         <div className="dialogue">
           <h3 className="dialogue-title">
