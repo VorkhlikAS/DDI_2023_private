@@ -15,25 +15,25 @@ This is a simple chat application built with FastAPI. You can run the applicatio
 
 1. Navigate to the project directory:
 
-```bash
-
-cd fastapi-chat-app
-```
+   ```bash
+   
+   cd fastapi-chat-app
+   ```
 1. Build the Docker image:
 
-```bash
+   ```bash
+   
+   docker build -t fastapi-chat-app .
+   ```
 
-docker build -t fastapi-chat-app .
-```
-
-Replace fastapi-chat-app with your preferred image name.
+   Replace fastapi-chat-app with your preferred image name.
 
 1. Run the Docker container:
 
-```bash
-
-    docker run -p 3000:3000 fastapi-chat-app
-```
+   ```bash
+   
+       docker run -p 3000:3000 fastapi-chat-app
+   ```
     This command maps port 3000 from the container to your host machine.
 
     Your FastAPI chat application should now be accessible at http://localhost:3000.
