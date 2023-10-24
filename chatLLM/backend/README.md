@@ -19,12 +19,13 @@ This is a simple chat application built with FastAPI. You can run the applicatio
 
 cd fastapi-chat-app
 ```
-`1. Build the Docker image:
+1. Build the Docker image:
 
 ```bash
 
 docker build -t fastapi-chat-app .
-``zz
+```
+
 Replace fastapi-chat-app with your preferred image name.
 
 1. Run the Docker container:
