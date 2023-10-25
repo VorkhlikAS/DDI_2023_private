@@ -37,7 +37,8 @@ This is a simple chat application built with FastAPI. You can run the applicatio
     This command maps port 3000 from the container to your host machine.
 
     Your FastAPI chat application should now be accessible at http://localhost:3000.
-Routes:
+
+## API Routes:
 
     GET /dialogues
         Description: Retrieve the list of all user dialogues.
