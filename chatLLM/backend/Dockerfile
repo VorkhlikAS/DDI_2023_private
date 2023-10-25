@@ -16,5 +16,5 @@ EXPOSE 3000
 
 # Define the command to run your FastAPI application using Uvicorn
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "3000"]
-
+# CMD ["bash"]
 
