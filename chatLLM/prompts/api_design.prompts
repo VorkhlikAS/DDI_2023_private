@@ -1,0 +1,32 @@
+Can you write the FastApi app.py script that obliges the minimum requirements?
+Minimum Requirements:
+Implement GET requests to retrieve information about the service.
+Implement POST requests to send messages.
+Implement PUT requests to like messages.
+For now, messages should be stored in a Python list or dictionary (we will discuss databases later).
+The PUT route should toggle the "like" and "dislike" states for messages.
+
+Ok, everything looks working and nice lets keep it like that. However, I have several issues:
+
+Although the api that you've given me is correct and working, I need it to be structurally connected to my frontend app, so I would be able to send request to this FastApi server. 
+
+Let me first describe my frontend, so it would be easier to make adjustments to the code.
+My frontend app is a messaging interface that consists of dialogues which user can create and which are listed to him and messages in theses dialogues.
+
+In order to make this backend app compatible with my frontend we need to introduce dialogues. In essense we need two methods/API routes:
+
+1) GET /dialogues : retrieve the list of all user dialogues
+2) POST /create: create a new user dialogue
+3) PUT /change{dialogue_id}: change the name of a dialogue by its ID
+
+Next logical change would be rewriting all the code that is connected to use messages:
+Messages should be retrieved from a dialogue, Messages should be posted in connection to one of the dialogues, Liking a message should be connected to a dialogue etc.
+
+Can you now rewrite the code below so it would comply with new concepts I just introduced now? In addition I want you to comment on how to make all this more logical and to have a good structure. I am giving you some leeway on this.
+
+I have two problems with your new code:
+
+1) route to get dialogue messages is missing
+2) for some reason when I am trying to send message in dialogue I get dialogue not found error. It seems like I can normally send messages before changing the dialogue. But after I change the dialogue name I can no longer send messages for changed names.
+
+Can you fix those?  
