@@ -32,7 +32,7 @@ This is a simple chat application built with FastAPI. You can run the applicatio
 
    ```bash
    
-       docker run -p 3000:3000 fastapi-chat-app
+    docker run -p 3000:3000 fastapi-chat-app
    ```
     This command maps port 3000 from the container to your host machine.
 
