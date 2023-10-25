@@ -1,4 +1,10 @@
-# Run app with Docker
+# Frontend Chat App
+
+## Prerequisites
+
+- [Docker](https://www.docker.com/) installed on your system.
+
+## Run app with Docker
 Build container
 
 ```bash
