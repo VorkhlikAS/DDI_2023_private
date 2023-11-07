@@ -8,6 +8,18 @@ body {
     background-color: #000;
 }
 
+#start-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px; /* Adjust the width as needed */
+    height: 60px; /* Adjust the height as needed */
+    font-size: 24px; /* Adjust the font size as needed */
+    z-index: 999; /* Set a high z-index to bring it to the foreground */
+}
+
+
 #game-container {
     position: relative;
     width: 100vw;
@@ -16,12 +28,14 @@ body {
 
 #player {
     position: absolute;
-    width: 50px;
-    height: 50px;
-    background-color: #00f; /* Blue player */
+    width: 70px;
+    height: 70px;
+    background-color: transparent; /* Make the background transparent */
     border-radius: 50%;
     margin-top: 235px;
-    left: 300px; /* Add this line to set the player's position */
+    left: 300px;
+    border: 5px solid #fff; /* Add a blue border */
+    box-shadow: 0 0 30px #00f; /* Add a blue box-shadow for the edge effect */
 }
 
 /* ... (previous styles) */
@@ -39,16 +53,17 @@ body {
     position: absolute;
     width: 20px; /* Set the width as desired */
     height: 20px; /* Set the height as desired */
-    background-color: #f00; /* Red color for projectiles */
-    border-radius: 50%; /* Make the projectiles round */
-    animation: moveProjectile 2s linear infinite; /* Adjust duration as needed */
+    /*background-color: #f00; /* Red color for projectiles */
+    /*border-radius: 50%; /* Make the projectiles round */
   }
   
-#beat-indicator {
+.beat-indicator {
     position: absolute;
-    width: 5px;
+    width: 10px;
     height: 100vh;
-    background-color: #ff0; /* Yellow beat indicator */
+    background-color: #fff; /* Yellow beat indicator */
+    border: 5px solid #ff0; /* Add a blue border */
+    box-shadow: 0 0 30px #ff0; /* Add a blue box-shadow for the edge effect */
     /* animation: moveBeat
     Indicator 5s linear infinite; Adjust the duration as needed */
 }
@@ -83,4 +98,48 @@ body {
         left: 0;
     }
 } */
+
+.lane {
+    position: absolute;
+    width: 110%;
+    height: 3%;
+    margin-top: 295px;
+    border-radius: 10px;
+    background-color: #484545; /* Gray color for the lanes */
+    border-bottom: 1px solid #3f3636; /* Subtle border at the bottom */
+    box-shadow: 0 1px 15px rgba(188, 184, 184, 0.2); /* Subtle shadow for the lanes */
+    backdrop-filter: blur(10px); /* Add blurred edges to the lane */
+}
+
+.text-message {
+    color: #00ff00; /* Green text color */
+    font-size: 48px; /* Adjust the font size as needed */
+    margin-top: 50px;
+    position: absolute;
+    transform-origin: center;
+    animation: fallWobble 1.5s ease-in-out infinite;
+}
+
+@keyframes fallWobble {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(100%) rotate(5deg);
+        opacity: 1;
+    }
+    30% {
+        transform: translateY(200%) rotate(-5deg);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(300%) rotate(5deg);
+        opacity: 1;
+    }
+    70% {
+        transform: translateY(400%) rotate(-5deg);
+        opacity: 1;
+    }
+}
 
