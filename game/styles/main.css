@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#player {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #00f; /* Blue player */
+    border-radius: 50%;
+    margin-top: 235px;
+    left: 300px; /* Add this line to set the player's position */
+}
+
+/* ... (previous styles) */
+
+#player.green {
+    background-color: #0f0; /* Green player */
+}
+
+#player.red {
+    background-color: #f00; /* Red player */
+}
+
+.projectile {
+    margin-top: 215px;
+    position: absolute;
+    width: 20px; /* Set the width as desired */
+    height: 20px; /* Set the height as desired */
+    background-color: #f00; /* Red color for projectiles */
+    border-radius: 50%; /* Make the projectiles round */
+    animation: moveProjectile 2s linear infinite; /* Adjust duration as needed */
+  }
+  
+#beat-indicator {
+    position: absolute;
+    width: 5px;
+    height: 100vh;
+    background-color: #ff0; /* Yellow beat indicator */
+    /* animation: moveBeat
+    Indicator 5s linear infinite; Adjust the duration as needed */
+}
+
+#hit-counter {
+    margin: 10px;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    font-size: 36px;
+    color: #FFD700; /* Set the text color to gold */
+    font-family: 'Courier New', monospace; /* Replace 'Your Funky Font' with your desired font */
+    z-index: 9999; /* Ensure it's on top of other elements */
+}
+  
+/* @keyframes moveProjectile {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: -20px; /* Off the screen on the left 
+    }
+  } 
+  */
+  
+/* 
+@keyframes moveBeatIndicator {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
+} */
+
