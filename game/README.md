@@ -47,5 +47,7 @@ Using stable-diffusion-online[https://stablediffusionweb.com/#ai-image-generator
 
 1. Background image:
 ```
-artistic, evening, night time, new York, American, street, suburbs, crosswalk, road, lanes, parked cars, neighborhood, break dance gang, pavement, side walk, horizontal, facing the street, parallel, left-to-right, houses, ground level, skyline, houses row, view from side, street lights, night
+artistic, evening, night time, new York, American, street, suburbs, crosswalk, road, lanes, parked cars,
+neighborhood, break dance gang, pavement, side walk, horizontal, facing the street, parallel, left-to-right,
+houses, ground level, skyline, houses row, view from side, street lights, night
 ```
