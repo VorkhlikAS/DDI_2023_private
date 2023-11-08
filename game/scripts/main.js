@@ -195,12 +195,12 @@ function startGame() {
             player.style.borderColor = playerColor.default;
             isGreen = false;
             playerDodged = false;
-        }, actionCooldownDuration);
+        }, actionCooldownDuration*2);
 
         setTimeout(() => {
             player.src = 'assets/images/Juszxkl.gif';
             isActionOnCooldown = false;
-        }, 2*actionCooldownDuration);
+        }, 2.5*actionCooldownDuration);
     }
 
     let hitCounter = 0; // Initialize the hit counter
