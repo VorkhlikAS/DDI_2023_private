@@ -35,8 +35,8 @@ const beatIndicators = [];
 const beatIndicatorWidth = 20; // Adjust the width as needed
 let playerDodged = false;
 // Projectiles configuration
-const projectileWidth = 120;
-const projectileHeight = 120;
+const projectileWidth = 160;
+const projectileHeight = 80;
 //const projectileSpeed = 20.000516; // Adjust the speed as needed
 const projectileSpeed = speed; // Adjust the speed as needed
 gameContainer.style.width = `${window.innerWidth * 1000}px`; // Adjust the width as needed
@@ -102,7 +102,7 @@ function startGame() {
 
     function createProjectile(laneIndex) {
         const projectile = document.createElement('img'); // Create an <img> element
-        projectile.src = './assets/images/projectiles/oCJQv0q.gif'; // Set the source to your GIF file
+        projectile.src = './assets/images/projectiles/image-removebg-preview(1).png'; // Set the source to your GIF file
         projectile.classList.add('projectile');
         projectile.style.width = `${projectileWidth}px`;
         projectile.style.height = `${projectileHeight}px`;
@@ -123,9 +123,18 @@ function startGame() {
         }
     }
 
-    function showTextMessage(message) {
+    function showTextMessage(message, force) {
         const textMessage = document.createElement('div');
         textMessage.classList.add('text-message');
+        if (force == 1) {
+            textMessage.classList.add('good');
+        } else if (force == 2) {
+            textMessage.classList.add('better');
+        } else if (force == 3) {
+            textMessage.classList.add('very-good');
+        } else {
+            textMessage.classList.add('great');
+        }
         textMessage.textContent = message;
         gameContainer.appendChild(textMessage);
 
@@ -140,11 +149,13 @@ function startGame() {
             playerDodged = true;
             consecutiveDodges++;
             if (consecutiveDodges === 1) {
-                showTextMessage("Nice Dodge!");
+                showTextMessage("Nice Dodge!", 1);
             } else if (consecutiveDodges === 2) {
-                showTextMessage("Double Dodge!");
+                showTextMessage("Double Dodge!", 2);
+            } else if (consecutiveDodges === 3) {
+                showTextMessage(`Tripple Dodge!!!`, 3);
             } else {
-                showTextMessage(`Consecutive Dodges: ${consecutiveDodges}`);
+                showTextMessage(`Consecutive Dodges: ${consecutiveDodges}!!!`, 4);
             }
         } else if (!playerDodged) {
             consecutiveDodges = 0;

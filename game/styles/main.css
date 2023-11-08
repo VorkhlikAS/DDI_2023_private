@@ -22,9 +22,24 @@ body {
 
 #game-container {
     position: relative;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100vh; /* Set the container height to the full viewport height */
+    background-image: url('../assets/images/background/image\(15\).png'); /* Adjust the path and file name */
+    background-repeat: repeat-x; /* Prevent the background from repeating */
+    background-position: top left; /* Center the background image */
+    background-size: 35% 40%;
 }
+
+ #game-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Set the overlay's height to half the viewport height */
+    background: linear-gradient(to top, rgb(19, 21, 28) 50%, rgba(0, 0, 0, 0.187) 100%);
+    pointer-events: none; /* Make the overlay ignore pointer events */
+} 
+
 
 #player {
     position: absolute;
@@ -32,10 +47,11 @@ body {
     height: 70px;
     background-color: transparent; /* Make the background transparent */
     border-radius: 50%;
-    margin-top: 235px;
+    margin-top: 295px;
     left: 300px;
     border: 5px solid #fff; /* Add a blue border */
     box-shadow: 0 0 30px #00f; /* Add a blue box-shadow for the edge effect */
+    z-index: 999;
 }
 
 /* ... (previous styles) */
@@ -49,10 +65,11 @@ body {
 }
 
 .projectile {
-    margin-top: 215px;
+    margin-top: 295px;
     position: absolute;
     width: 20px; /* Set the width as desired */
     height: 20px; /* Set the height as desired */
+    z-index: 997;
     /*background-color: #f00; /* Red color for projectiles */
     /*border-radius: 50%; /* Make the projectiles round */
   }
@@ -63,7 +80,8 @@ body {
     height: 100vh;
     background-color: #fff; /* Yellow beat indicator */
     border: 5px solid #ff0; /* Add a blue border */
-    box-shadow: 0 0 30px #ff0; /* Add a blue box-shadow for the edge effect */
+    box-shadow: 20 20 40px rgb(9, 9, 6); /* Add a blue box-shadow for the edge effect */
+    z-index: 998;
     /* animation: moveBeat
     Indicator 5s linear infinite; Adjust the duration as needed */
 }
@@ -71,9 +89,10 @@ body {
 #hit-counter {
     margin: 10px;
     position: fixed;
-    left: 10px;
+    left: 40px;
     top: 10px;
-    font-size: 36px;
+    font-size: 46px;
+    font-weight: 1000;
     color: #FFD700; /* Set the text color to gold */
     font-family: 'Courier New', monospace; /* Replace 'Your Funky Font' with your desired font */
     z-index: 9999; /* Ensure it's on top of other elements */
@@ -102,23 +121,48 @@ body {
 .lane {
     position: absolute;
     width: 110%;
-    height: 3%;
-    margin-top: 295px;
+    height: 4%;
+    margin-top: 355px;
     border-radius: 10px;
-    background-color: #484545; /* Gray color for the lanes */
+    background: #484545; /* Gray color for the lanes */
     border-bottom: 1px solid #3f3636; /* Subtle border at the bottom */
     box-shadow: 0 1px 15px rgba(188, 184, 184, 0.2); /* Subtle shadow for the lanes */
-    backdrop-filter: blur(10px); /* Add blurred edges to the lane */
+    z-index: 997;
 }
 
 .text-message {
-    color: #00ff00; /* Green text color */
-    font-size: 48px; /* Adjust the font size as needed */
     margin-top: 50px;
+    margin: 40px;
     position: absolute;
     transform-origin: center;
+    font-family: 'Courier New', monospace; /* Replace 'Your Funky Font' with your desired font */
     animation: fallWobble 1.5s ease-in-out infinite;
 }
+
+.good {
+    font-size: 36px; /* Adjust the font size as needed */
+    color: #f1ebeb; /* Green text color */
+}
+
+.better {
+    font-size: 42px;
+    color: #ffe099;
+    font-weight: 600;
+}
+
+.very-good {
+    font-size: 46px;
+    font-weight: 900;
+    color: rgb(255, 156, 57); /* Green text color */
+}
+
+.great {
+    font-size: 48px;
+    text-shadow: -1px 0 rgb(255, 0, 0), 0 1px rgb(255, 0, 0), 1px 0 rgb(255, 0, 0), 0 -1px rgb(255, 0, 0);    
+    font-weight: 1000;
+    color: rgb(255, 208, 0); /* Green text color */
+}
+
 
 @keyframes fallWobble {
     0%, 100% {
