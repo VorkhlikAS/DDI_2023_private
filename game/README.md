@@ -2,8 +2,7 @@
 
 Kawabanga is an exciting and challenging browser-based rhythm dodging game. Test your reflexes and see how long you can survive against the oncoming obstacles in different lanes.
 
-![]([https://github.com/Your_Repository_Name/Your_GIF_Name.gif](https://github.com/VorkhlikAS/DDI_2023_private/blob/HW5/game/docs/demo.gif))
-
+![Alt Text](https://github.com/VorkhlikAS/DDI_2023_private/blob/HW5/game/docs/demo.gif)
 ## How to Play
 
 1. **Run the Game**: To play Kawabanga, simply open the `index.html` file in your web browser.
