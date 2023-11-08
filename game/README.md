@@ -39,3 +39,13 @@ This game is inspired by classic rhythm games and brought to you by [Your Name].
 
 If you encounter any issues or have feedback, please let us know. Happy dodging!
 
+# Making the game
+
+## Generating graphics
+
+Using stable-diffusion-online[https://stablediffusionweb.com/#ai-image-generator] following graphical elements were generated:
+
+1. Background image:
+```
+artistic, evening, night time, new York, American, street, suburbs, crosswalk, road, lanes, parked cars, neighborhood, break dance gang, pavement, side walk, horizontal, facing the street, parallel, left-to-right, houses, ground level, skyline, houses row, view from side, street lights, night
+```
