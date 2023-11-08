@@ -43,7 +43,7 @@ If you encounter any issues or have feedback, please let us know. Happy dodging!
 
 ## Generating graphics
 
-Using stable-diffusion-online[https://stablediffusionweb.com/#ai-image-generator] following graphical elements were generated:
+Using [stable-diffusion-online](https://stablediffusionweb.com/#ai-image-generator) following graphical elements were generated:
 
 1. Background image (Guidance Scale:8-12):
 You could try tinkering with Guidance Scale but values from 8-12 worked best for me.
