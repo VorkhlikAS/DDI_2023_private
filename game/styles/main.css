@@ -1,0 +1,200 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+#start-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px; /* Adjust the width as needed */
+    height: 60px; /* Adjust the height as needed */
+    font-size: 24px; /* Adjust the font size as needed */
+    z-index: 999; /* Set a high z-index to bring it to the foreground */
+}
+
+
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Set the container height to the full viewport height */
+    background-image: url('../assets/images/background/image\(12\).png'); /* Adjust the path and file name */
+    background-repeat: repeat-x; /* Prevent the background from repeating */
+    background-position: top left; /* Center the background image */
+    background-size: 35% 40%;
+}
+
+ #game-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Set the overlay's height to half the viewport height */
+    background: linear-gradient(to top, rgb(24, 27, 40) 50%, rgba(0, 0, 0, 0.187) 100%);
+    pointer-events: none; /* Make the overlay ignore pointer events */
+} 
+
+
+#player {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: transparent; /* Make the background transparent */
+    border-radius: 50%;
+    margin-top: 295px;
+    left: 300px;
+    border: 5px solid #fff; /* Add a blue border */
+    box-shadow: 0 0 30px #00f; /* Add a blue box-shadow for the edge effect */
+    z-index: 999;
+}
+
+/* ... (previous styles) */
+
+#player.green {
+    background-color: #0f0; /* Green player */
+}
+
+#player.red {
+    background-color: #f00; /* Red player */
+}
+
+.projectile {
+    margin-top: 295px;
+    position: absolute;
+    width: 20px; /* Set the width as desired */
+    height: 20px; /* Set the height as desired */
+    z-index: 997;
+    /*background-color: #f00; /* Red color for projectiles */
+    /*border-radius: 50%; /* Make the projectiles round */
+  }
+  
+.beat-indicator {
+    position: absolute;
+    width: 10px;
+    height: 100vh;
+    background-color: #fff; /* Yellow beat indicator */
+    border: 5px solid #ff0; /* Add a blue border */
+    box-shadow: 20 20 40px rgb(9, 9, 6); /* Add a blue box-shadow for the edge effect */
+    z-index: 998;
+    /* animation: moveBeat
+    Indicator 5s linear infinite; Adjust the duration as needed */
+}
+
+#hit-counter {
+    margin: 10px;
+    position: fixed;
+    left: 40px;
+    top: 10px;
+    font-size: 46px;
+    font-weight: 1000;
+    color: #FFD700; /* Set the text color to gold */
+    font-family: 'Courier New', monospace; /* Replace 'Your Funky Font' with your desired font */
+    z-index: 9999; /* Ensure it's on top of other elements */
+}
+
+#game-howto {
+    white-space: pre-wrap;
+    margin-left: 700px;
+    position: fixed;
+    top: 1px;
+    font-size: 42px;
+    font-weight: 1000;
+    color: #e7e2cb; /* Set the text color to gold */
+    font-family: 'Courier New', monospace; /* Replace 'Your Funky Font' with your desired font */
+    z-index: 9999; /* Ensure it's on top of other elements */
+    text-shadow: -3px 0 rgb(0, 0, 0), 0 3px rgb(0, 0, 0), 5px 0 rgb(0, 0, 0), 0 -3px rgb(0, 0, 0);    
+}
+  
+/* @keyframes moveProjectile {
+    0% {
+      left: 100%;
+    }
+    100% {
+      left: -20px; /* Off the screen on the left 
+    }
+  } 
+  */
+  
+/* 
+@keyframes moveBeatIndicator {
+    0% {
+        left: 100%;
+    }
+    100% {
+        left: 0;
+    }
+} */
+
+.lane {
+    position: absolute;
+    width: 110%;
+    height: 4%;
+    margin-top: 355px;
+    background-color: rgb(68, 68, 87);
+    box-shadow: 0 1px 15px rgba(188, 184, 184, 0.2); 
+    z-index: 997;
+}
+
+.text-message {
+    margin-top: 50px;
+    margin: 40px;
+    position: absolute;
+    transform-origin: center;
+    font-family: 'Courier New', monospace; /* Replace 'Your Funky Font' with your desired font */
+    animation: fallWobble 1.5s ease-in-out infinite;
+}
+
+.good {
+    font-size: 36px; /* Adjust the font size as needed */
+    color: #f1ebeb; /* Green text color */
+}
+
+.better {
+    font-size: 42px;
+    color: #ffe099;
+    font-weight: 600;
+}
+
+.very-good {
+    font-size: 46px;
+    font-weight: 900;
+    color: rgb(255, 156, 57); /* Green text color */
+}
+
+.great {
+    font-size: 48px;
+    text-shadow: -1px 0 rgb(255, 0, 0), 0 1px rgb(255, 0, 0), 1px 0 rgb(255, 0, 0), 0 -1px rgb(255, 0, 0);    
+    font-weight: 1000;
+    color: rgb(255, 208, 0); /* Green text color */
+}
+
+
+@keyframes fallWobble {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        transform: translateY(100%) rotate(5deg);
+        opacity: 1;
+    }
+    30% {
+        transform: translateY(200%) rotate(-5deg);
+        opacity: 1;
+    }
+    50% {
+        transform: translateY(300%) rotate(5deg);
+        opacity: 1;
+    }
+    70% {
+        transform: translateY(400%) rotate(-5deg);
+        opacity: 1;
+    }
+}
+

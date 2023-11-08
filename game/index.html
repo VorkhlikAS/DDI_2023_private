@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <title>Kwabanga</title>
+</head>
+<body>
+    <button id="start-button">Start Game</button>
+    <audio id="game-music" loop>
+        <source src="assets/audio/Funky-Chunk(chosic.com).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      
+    <span id="hit-counter">Hits: 0</span>
+    <text id="game-howto">
+        KaWaBanGa: dodge and avoid cars!!!
+        Controls:
+            SpaceBar - dodge
+            up&down arrows - move
+    </text>>
+    <div id="game-container">
+        <div class="lane" style="top: 0;"></div>
+        <div class="lane" style="top: 100px;"></div>
+        <div class="lane" style="top: 200px;"></div>
+        <div class="lane" style="top: 300px;"></div>
+        <div class="lane" style="top: 400px;"></div>
+        <div>
+            <img id="player" src="assets/images/Juszxkl.gif" alt="Player Character">
+        </div>
+        <div id="game-overlay"></div>
+        <!-- <div id="beat-indicator"></div> -->
+    </div>
+    <script type="application/json" id="projectileScenario">
+        [
+    { "lanes": [1, 3], "timing": 0 },
+    { "lanes": [2, 4], "timing": 250 },
+    { "lanes": [1, 3, 5], "timing": 1000 },
+    { "lanes": [2, 4], "timing": 1500 },
+    { "lanes": [1, 2, 3], "timing": 3000 },
+    { "lanes": [2, 3, 4], "timing": 3500 },
+    { "lanes": [3, 4, 5], "timing": 5000 },
+    { "lanes": [4, 5], "timing": 5500 },
+    { "lanes": [1, 3], "timing": 7000 },
+    { "lanes": [2, 4], "timing": 7500 },
+    { "lanes": [1, 3, 5], "timing": 9000 },
+    { "lanes": [2, 4], "timing": 9500 },
+    { "lanes": [1, 2, 3], "timing": 11000 },
+    { "lanes": [2, 3, 4], "timing": 11500 },
+    { "lanes": [3, 4, 5], "timing": 13000 },
+    { "lanes": [4, 5], "timing": 13500 },
+    { "lanes": [1, 3], "timing": 15000 },
+    { "lanes": [2, 4], "timing": 15500 },
+    { "lanes": [1, 3, 5], "timing": 17000 },
+    { "lanes": [2, 4], "timing": 17500 },
+    { "lanes": [1, 2, 3], "timing": 19000 },
+    { "lanes": [2, 3, 4], "timing": 19500 },
+    { "lanes": [3, 4, 5], "timing": 21000 },
+    { "lanes": [4, 5], "timing": 21500 },
+    { "lanes": [1, 2, 3], "timing": 23000 },
+    { "lanes": [2, 3, 4], "timing": 23500 },
+    { "lanes": [3, 4, 5], "timing": 25000 },
+    { "lanes": [4, 5], "timing": 25500 },
+    { "lanes": [1, 2], "timing": 27000 },
+    { "lanes": [3, 4], "timing": 27500 },
+    { "lanes": [1, 3, 5], "timing": 29000 },
+    { "lanes": [2, 4], "timing": 29500 },
+    { "lanes": [1, 2, 3], "timing": 31000 },
+    { "lanes": [2, 3, 4], "timing": 31500 },
+    { "lanes": [3, 4, 5], "timing": 33000 },
+    { "lanes": [4, 5], "timing": 33500 },
+    { "lanes": [1, 3], "timing": 35000 },
+    { "lanes": [2, 4], "timing": 35500 },
+    { "lanes": [1, 3, 5], "timing": 37000 },
+    { "lanes": [2, 4], "timing": 37500 },
+    { "lanes": [1, 2, 3], "timing": 39000 },
+    { "lanes": [2, 3, 4], "timing": 39500 },
+    { "lanes": [3, 4, 5], "timing": 41000 },
+    { "lanes": [4, 5], "timing": 41500 },
+    { "lanes": [1, 3], "timing": 43000 },
+    { "lanes": [2, 4], "timing": 43500 },
+    { "lanes": [1, 3, 5], "timing": 45000 },
+    { "lanes": [2, 4], "timing": 45500 },
+    { "lanes": [1, 2, 3], "timing": 47000 },
+    { "lanes": [2, 3, 4], "timing": 47500 },
+    { "lanes": [3, 4, 5], "timing": 49000 },
+    { "lanes": [4, 5], "timing": 49500 }
+]
+
+    
+        </script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
+
