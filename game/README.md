@@ -39,7 +39,7 @@ This game is inspired by classic rhythm games and brought to you by [Your Name].
 
 If you encounter any issues or have feedback, please let us know. Happy dodging!
 
-# Making the game
+# Game in the making
 
 ## Generating graphics
 
@@ -52,4 +52,16 @@ artistic, evening, night time, new York, American, street, suburbs, crosswalk, r
 lanes, parked cars, neighborhood, break dance gang, pavement, side walk, horizontal,
 parallel, left-to-right, houses, ground level, skyline, houses row, view from side,
 street lights, night, ground point of view, houses, fire-safety stairs, ghetto 
+```
+2. Car models (Guidance Scale)
+
+```
+
+```
+## Generating source code
+
+Here's are the prompts I used to develop the main.js source code as well as other resources for the game
+
+```
+---
 ```
