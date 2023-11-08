@@ -17,7 +17,7 @@ Kawabanga is an exciting and challenging browser-based rhythm dodging game. Test
 
 4. **Scoring**: Your goal is to survive as long as possible. You earn points for every successful dodge and the longer you survive.
 
-5. **Game Over**: If you get hit by a projectile or beat indicator, it's game over. Your final score will be displayed.
+5. **Game Over**: If you get hit by a projectile or beat indicator, the hit counter increases. The goal is to get hit the least amount.
 
 ## Game Features
 
@@ -30,15 +30,13 @@ Kawabanga is an exciting and challenging browser-based rhythm dodging game. Test
 
 Feel the rhythm, dodge with precision, and try to achieve the highest score in Kawabanga! Have fun and enjoy the game.
 
-![Kawabanga Gameplay](screenshot.png)
-
 ## Attribution
 
 The game "Kawabanga" was created using HTML, CSS, and JavaScript.
 
 ## Credits
 
-This game is inspired by classic rhythm games and brought to you by [Your Name].
+This game is inspired by classic rhythm games and brought to you by VorkhlikAS.
 
 If you encounter any issues or have feedback, please let us know. Happy dodging!
 
