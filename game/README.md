@@ -53,10 +53,11 @@ lanes, parked cars, neighborhood, break dance gang, pavement, side walk, horizon
 parallel, left-to-right, houses, ground level, skyline, houses row, view from side,
 street lights, night, ground point of view, houses, fire-safety stairs, ghetto 
 ```
-2. Car models (Guidance Scale)
-
+2. Car models (Guidance Scale:7-9)
+Figuring this one out was kinda hard, but in the end I've got what I wanted after about 30 tries. After getting the car image I removed background using some online services and mirrored it horizontally.
 ```
-
+car, from side view, moving, model, single car, right to left, no background,
+dark background, uniform background, one, american, dodge, old, side
 ```
 ## Generating source code
 
