@@ -79,8 +79,8 @@ body {
     width: 10px;
     height: 100vh;
     background-color: #fff; /* Yellow beat indicator */
-    border: 5px solid #ff0; /* Add a blue border */
-    box-shadow: 20 20 40px rgb(9, 9, 6); /* Add a blue box-shadow for the edge effect */
+    border: 3px solid rgb(255, 191, 0); 
+    box-shadow: 20px 20px 20px rgb(255, 23, 23); /* Add a blue box-shadow for the edge effect */
     z-index: 998;
     /* animation: moveBeat
     Indicator 5s linear infinite; Adjust the duration as needed */
