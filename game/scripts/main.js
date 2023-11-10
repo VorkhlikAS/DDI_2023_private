@@ -12,7 +12,7 @@ const playerWidth = 50;
 const playerHeight = 50;
 let userWaitingTime = 0; // Initialize the user's waiting time
 // Set the tempo (in BPM)
-const tempo = 118; // You can adjust this as needed
+const tempo = 116.3; // You can adjust this as needed
 
 // Calculate the duration of a beat in milliseconds
 const beatDuration = (60 / tempo) * 1000 / 2;
@@ -22,7 +22,7 @@ const distanceToTravel = window.innerWidth;
 
 // Calculate the speed (distance per millisecond) of the beat indicator
 
-const speed = distanceToTravel / beatDuration + 10;
+const speed = distanceToTravel / beatDuration * 2;
 
 // Variables to track player state
 let isRed = false; // Red player state
@@ -87,7 +87,7 @@ function startGame() {
       });
     setTimeout(() => {
         playGameMusic();
-      }, timeDelay); // Start the game music
+      }, timeDelay-200); // Start the game music
     startButton.style.display = 'none'; // Hide the start button
 
     // Function to move the player to a specific lane
